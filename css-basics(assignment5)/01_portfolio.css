@@ -1,0 +1,131 @@
+/* General page setup */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef4f8;
+    color: #17212b;
+}
+
+/* Flexbox keeps the footer at the bottom */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 72px;
+    padding: 1em 5%;
+    background: #12344d;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 2em;
+}
+
+.site-header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio-main {
+    flex: 1;
+    padding-top: 100px;
+}
+
+.hero {
+    min-height: 70vh;
+    padding: 8vh 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    background: #dcecf7;
+}
+
+.hero h2 {
+    font-size: 4vw;
+    margin: 0.5em 0;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.bio {
+    max-width: 60%;
+    line-height: 1.7;
+}
+
+.hero img {
+    width: 28%;
+    max-width: 280px;
+    border-radius: 50%;
+    border: 6px solid #12344d;
+}
+
+.about,
+.contact {
+    padding: 4rem 8%;
+    margin: 2rem 5%;
+    border: 1px solid #b8cbd8;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background: #12344d;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        gap: 0.7em;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio {
+        max-width: 100%;
+    }
+
+    .hero img {
+        width: 55%;
+    }
+}

@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: #d8d3c8;
+    color: #242424;
+    font-family: Georgia, serif;
+}
+
+.newspaper {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: #fffdf5;
+}
+
+.newspaper h1 {
+    column-span: all;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    border-bottom: 4px solid #242424;
+    padding-bottom: 1rem;
+    margin-top: 0;
+}
+
+.article-content {
+    column-count: 3;
+    column-gap: 2.5rem;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.article-content p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.article-content img {
+    float: left;
+    width: 45%;
+    margin: 0 1rem 0.7rem 0;
+}
+
+@media (max-width: 800px) {
+    .article-content {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 550px) {
+    .article-content {
+        column-count: 1;
+    }
+
+    .newspaper {
+        margin: 0;
+    }
+}

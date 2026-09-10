@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CSS Layout</title>
+    <link rel="stylesheet" href="10_complete_layout.css">
+</head>
+<body>
+    <!-- Sticky navigation header -->
+    <header class="site-header">
+        <h1>TechSpace</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero uses a relative container and an absolutely positioned overlay -->
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <h2>Welcome to TechSpace</h2>
+                <p>Simple technology solutions for modern ideas.</p>
+            </div>
+        </section>
+
+        <!-- Two-column About section -->
+        <section id="about" class="about section">
+            <div>
+                <h2>About Us</h2>
+                <p>We create practical digital solutions and help learners explore modern technologies.</p>
+            </div>
+            <img src="https://picsum.photos/id/48/600/400" alt="Technology team">
+        </section>
+
+        <!-- Three service boxes -->
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="services">
+                <article>
+                    <h3>Web Development</h3>
+                    <p>Responsive and accessible websites.</p>
+                </article>
+                <article>
+                    <h3>Data Analytics</h3>
+                    <p>Reports and insights using data.</p>
+                </article>
+                <article>
+                    <h3>Consulting</h3>
+                    <p>Guidance for technology projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechSpace. All rights reserved.</p>
+    </footer>
+
+    <!-- Fixed help button demonstrates fixed positioning -->
+    <a class="help-button" href="#contact">Help</a>
+</body>
+</html>

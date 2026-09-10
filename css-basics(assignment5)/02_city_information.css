@@ -1,0 +1,78 @@
+/* Base typography and spacing */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f4efe6;
+    color: #2b2118;
+}
+
+header {
+    padding: 2rem 5%;
+    background: #3b2417;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+nav {
+    padding: 1rem;
+    text-align: center;
+    background: #6b4226;
+}
+
+nav a {
+    margin: 0 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+section {
+    min-height: 65vh;
+    padding: 6rem 8%;
+    margin: 0;
+    border-bottom: 5px solid #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.history {
+    background: linear-gradient(120deg, #e9c46a, #f4a261);
+}
+
+.culture {
+    /* Radial gradient creates a soft center-to-edge background */
+    background: radial-gradient(circle at center, #fff4cf, #d9b99b, #8c6a4a);
+}
+
+.travel {
+    background: linear-gradient(rgba(30, 40, 50, 0.55), rgba(30, 40, 50, 0.55)),
+                url("https://via.placeholder.com/1600x800");
+    color: white;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+section p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 6px solid currentColor;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background: #3b2417;
+    color: white;
+}

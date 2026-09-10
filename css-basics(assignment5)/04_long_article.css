@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f7f7f2;
+    color: #242424;
+}
+
+header {
+    padding: 3rem 8%;
+    background: #203a43;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+main {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+main p {
+    margin: 2rem 0;
+    line-height: 1.9;
+    font-size: 1.1rem;
+}
+
+/* Large first letter improves the article's visual hierarchy */
+main p::first-letter {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+/* First line is bold as required */
+main p::first-line {
+    font-weight: bold;
+}
+
+mark {
+    background: #ffd166;
+    color: #3a2f00;
+    padding: 0.1em 0.25em;
+}
+
+blockquote {
+    margin: 3rem 0;
+    padding: 2rem;
+    border-left: 8px solid #2a9d8f;
+    background: #e6f5f2;
+    font-size: 1.3rem;
+    font-style: italic;
+}
