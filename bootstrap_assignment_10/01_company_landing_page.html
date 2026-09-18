@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaTech - Company Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="01_company_landing_page.css">
+</head>
+<body>
+<header>
+  <!-- Bootstrap navbar makes navigation responsive -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">NovaTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero py-5">
+    <div class="container">
+      <!-- Bootstrap row/columns create the responsive hero layout -->
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <p class="text-uppercase fw-bold small">Smart technology for modern teams</p>
+          <h1 class="display-3 fw-bold">Build faster. Work smarter.</h1>
+          <p class="lead">NovaTech helps growing teams turn ideas into reliable digital products with simple, scalable technology.</p>
+          <a href="#contact" class="btn btn-light btn-lg px-4">Get Started</a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded-4 shadow" alt="Team working together">
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<main>
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold">Why NovaTech?</h2>
+      <div class="row g-4 mt-3">
+        <div class="col-md-4"><div class="p-4 border rounded-3 h-100"><h3>Simple</h3><p>Clear workflows designed for everyday teams.</p></div></div>
+        <div class="col-md-4"><div class="p-4 border rounded-3 h-100"><h3>Scalable</h3><p>Solutions that grow with your organization.</p></div></div>
+        <div class="col-md-4"><div class="p-4 border rounded-3 h-100"><h3>Reliable</h3><p>Thoughtful technology built for dependable results.</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="contact" class="bg-dark text-white text-center py-4">
+  <p class="mb-1">Contact: hello@novatech.example</p>
+  <small>Created by Pushpendra Singh | B.Tech Data Analytics</small>
+</footer>
+</body>
+</html>

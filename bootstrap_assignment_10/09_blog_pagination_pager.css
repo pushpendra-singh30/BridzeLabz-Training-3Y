@@ -1,0 +1,3 @@
+body { font-family: Arial, sans-serif; }
+article > div { transition: transform .2s ease, box-shadow .2s ease; }
+article > div:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08); }

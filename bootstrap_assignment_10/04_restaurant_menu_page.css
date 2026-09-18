@@ -1,0 +1,4 @@
+body { font-family: Georgia, serif; }
+figure img { max-height: 340px; width: 100%; object-fit: cover; }
+.list-group-item { transition: background .2s ease; }
+.list-group-item:hover { background: #eaf7ed; }

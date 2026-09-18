@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #222; }
+header, footer { text-align: center; padding: 20px; background: #17324d; color: white; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; padding: 40px; }
+.image-card { margin: 0; text-align: center; overflow: hidden; }
+.image-card img { width: 100%; display: block; border-radius: 12px; transition: filter 0.5s ease; box-shadow: 0 5px 15px rgba(0,0,0,.15); }
+.blur { filter: blur(3px); }
+.grayscale { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.brightness { filter: brightness(65%); }
+.contrast { filter: contrast(180%); }
+.hue { filter: hue-rotate(120deg); }
+.image-card img:hover { filter: none; }
+figcaption { padding: 12px; font-weight: bold; }
+@media (max-width: 600px) {
+    .gallery { grid-template-columns: 1fr; }
+}

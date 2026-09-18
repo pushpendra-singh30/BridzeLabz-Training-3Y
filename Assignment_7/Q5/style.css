@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; }
+header { text-align: center; padding: 25px; background: #222; color: white; }
+main { max-width: 900px; margin: 30px auto; padding: 20px; }
+section { background: white; padding: 25px; margin-bottom: 20px; border-radius: 10px; }
+
+/* Attribute selector: selects inputs whose type is exactly text. */
+input[type="text"] { border: 3px solid #457b9d; }
+/* Attribute selector: selects links whose href begins with https. */
+a[href^="https"] { color: #008000; font-weight: bold; }
+
+/* Pseudo-classes: hover, focus and nth-child. */
+.items li:hover { background: #dbeafe; }
+input:focus { outline: 3px solid #ffb703; }
+.items li:nth-child(odd) { background: #eee; }
+
+/* Pseudo-elements: content before and after an element. */
+.intro h2::before { content: "★ "; }
+.intro h2::after { content: " ★"; }
+
+/* Child combinator: direct li children of ul. */
+.items > li { padding: 6px; }
+/* Adjacent sibling: paragraph immediately after h2. */
+h2 + p { font-weight: bold; }
+/* General sibling: all paragraphs after .note within the same parent. */
+.note ~ p { color: #6a1b9a; }
+/* Descendant combinator: any p inside .intro. */
+.intro p { color: #333; }
+
+.forms { display: flex; flex-wrap: wrap; gap: 15px; }
+.forms input, .forms a { padding: 10px; }

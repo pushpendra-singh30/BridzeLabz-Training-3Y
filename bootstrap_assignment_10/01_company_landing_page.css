@@ -1,0 +1,4 @@
+/* Custom styling; Bootstrap handles the responsive structure. */
+body { font-family: Arial, sans-serif; }
+.hero { background: linear-gradient(135deg, #0d6efd, #6f42c1); color: white; }
+.hero img { max-height: 360px; object-fit: cover; }

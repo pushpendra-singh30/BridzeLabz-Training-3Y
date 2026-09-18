@@ -1,0 +1,12 @@
+/* Basic page styling */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #222; }
+header, footer { text-align: center; padding: 20px; background: #222; color: white; }
+.boxes { min-height: 70vh; padding: 40px 5%; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
+.box { background: white; min-width: 170px; text-align: center; transition: border-color 0.3s ease; }
+.box:hover { border-color: #e63946; }
+.solid { border: 5px solid #222; padding: 10px; }
+.dashed { border: 5px dashed #222; padding: 20px; }
+.double { border: 8px double #222; padding: 30px; }
+.groove { border: 8px groove #777; padding: 40px; }
+.rounded { border: 5px solid #222; padding: 25px; border-radius: 25px; }

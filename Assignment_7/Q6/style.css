@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; }
+header { text-align: center; padding: 25px; background: #222; color: white; }
+.showcase { min-height: 75vh; display: flex; align-items: center; justify-content: center; gap: 50px; padding: 40px; flex-wrap: wrap; }
+.showcase section { text-align: center; }
+.box { width: 150px; height: 150px; display: flex; align-items: center; justify-content: center; background: #8ecae6; border-radius: 12px; transition: all 0.4s ease; }
+.rotate:hover { transform: rotate(20deg); }
+.scale:hover { transform: scale(1.2); }
+.translate:hover { transform: translate(20px, -20px); }
+.skew:hover { transform: skew(15deg, 8deg); }
+.showcase p { font-weight: bold; }
