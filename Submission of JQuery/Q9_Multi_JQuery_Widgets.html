@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q9 - Multiple jQuery Versions</title><style>
+body{font-family:Arial;margin:25px}.widget{display:inline-block;padding:20px;margin:8px;background:#eef3f8;border-radius:8px}.active{outline:3px solid #16835d}
+#modal{display:none;position:fixed;inset:0;background:#0008;align-items:center;justify-content:center}
+#modalContent{background:white;padding:25px;border-radius:10px}
+</style>
+<!-- Load jQuery 3.6.4 as version 1, then release the $ alias. -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  var jqV1 = jQuery.noConflict(true);
+</script>
+<!-- Load jQuery 3.7.1 as version 2; it now owns the global $ and jQuery aliases. -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script defer src="Q9_Multi_JQuery_Widgets.js"></script>
+</head><body><main><h1>Dashboard Widgets</h1>
+<section id="carousel"><div class="widget">Carousel Slide 1</div><div class="widget">Carousel Slide 2</div><div class="widget">Carousel Slide 3</div></section>
+<section><button id="notify">Show Notification Modal</button>
+<div class="widget tooltip" title="Sales overview">Sales Widget</div>
+<div class="widget tooltip" title="User activity overview">Users Widget</div>
+<div class="widget tooltip" title="Revenue overview">Revenue Widget</div></section>
+<div id="modal"><div id="modalContent"><h2>Notification</h2><p>You have a new dashboard update.</p><button id="closeModal">Close</button></div></div>
+</main></body></html>

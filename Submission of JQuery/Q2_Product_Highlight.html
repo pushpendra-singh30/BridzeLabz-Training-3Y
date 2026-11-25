@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q2 - Product Highlight</title>
+<style>
+body{font-family:Arial;margin:25px;background:#f7f7f7}.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.product{background:white;border:1px solid #ddd;padding:18px;border-radius:10px;cursor:pointer}
+.product.highlight{background:#fff2b3;border:2px solid #d99b00}.details{display:none;color:#555}
+.favorite{float:right;border:0;background:none;font-size:22px;cursor:pointer}.selected{color:#d11}
+.product[data-discount]::after{content:"Discount";display:inline-block;background:#e1f5e8;padding:4px;margin-top:8px}
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script defer src="Q2_Product_Highlight.js"></script>
+</head><body>
+<header><h1>Featured Products</h1></header>
+<main><section class="products" aria-label="Product list">
+<article class="product" data-stock="yes" data-discount="10"><button class="favorite" aria-label="Favorite">♡</button><h2>Wireless Mouse</h2><p>₹799</p><p class="details">Ergonomic mouse with wireless connection.</p></article>
+<article class="product" data-stock="no"><button class="favorite" aria-label="Favorite">♡</button><h2>Keyboard</h2><p>₹1,299</p><p class="details">Compact mechanical keyboard.</p></article>
+<article class="product" data-stock="yes" data-discount="20"><button class="favorite" aria-label="Favorite">♡</button><h2>Headphones</h2><p>₹2,499</p><p class="details">Comfortable headphones with clear sound.</p></article>
+<article class="product" data-stock="yes"><button class="favorite" aria-label="Favorite">♡</button><h2>Webcam</h2><p>₹1,899</p><p class="details">Full HD webcam for video calls.</p></article>
+<article class="product" data-stock="no" data-discount="5"><button class="favorite" aria-label="Favorite">♡</button><h2>USB Hub</h2><p>₹599</p><p class="details">Four-port USB expansion hub.</p></article>
+</section></main>
+</body></html>

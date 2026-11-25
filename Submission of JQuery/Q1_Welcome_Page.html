@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q1 - Welcome Greeting</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:30px;background:#f4f7fb;color:#222}
+    main{max-width:700px;margin:auto;background:white;padding:25px;border-radius:12px}
+    button{padding:10px 14px;margin:6px;cursor:pointer} #welcome{padding:14px;background:#eaf3ff}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="Q1_Welcome_Page.js"></script>
+</head>
+<body>
+<main>
+  <header><h1>Welcome to Our Website</h1></header>
+  <section aria-labelledby="greeting-heading">
+    <h2 id="greeting-heading">Your Greeting</h2>
+    <p id="greeting" role="button" tabindex="0">Loading greeting...</p>
+    <p id="welcome">We are happy to have you here. Explore, learn and grow with us!</p>
+    <button id="changeGreeting">Change Greeting</button>
+    <button id="toggleWelcome">Hide Welcome Message</button>
+  </section>
+  <footer><p>Have a wonderful day!</p></footer>
+</main>
+</body>
+</html>
